@@ -14,7 +14,6 @@ class VoiceController:
         self.audio = pyaudio.PyAudio()
         
     def listen_for_command(self):
-        """Listen for voice input and convert to text using OpenAI Whisper"""
         CHUNK = 1024
         FORMAT = pyaudio.paInt16
         CHANNELS = 1
